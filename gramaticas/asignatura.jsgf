@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar asignatura;
+
+public <asignatura> = Nuevos Paradigmas de Interaccion | N P I 
+					| Procesadores de Lenguajes | P L 
+					| Programacion Tecnica y Cientifica | P T C
+					| Simulacion de Sistemas | S S 
+					| Teoria de la Informacion y la Codificacion | T I C 
+					| Vision por Computador | V C 
+

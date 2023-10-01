@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml xmlns="http://www.w3.org/2001/06/vxml" version = "2.1" xml:lang="es-ES" application="root.xml">
+	
+	<form id="pregunta_asignatura">
+		
+		<field name="asignatura">
+			<prompt> Sobre que asignatura deseas informacion? </prompt> 
+			<grammar src="gramaticas/asignatura.jsgf"/>
+		</field>
+		
+		<filled>
+			<if cond="asignatura == 'Nuevos Paradigmas de Interaccion'">
+				<prompt>El profesor de NPI es Ramon Lopez-Cozar Delgado.</prompt>	
+			<elseif cond="asignatura == 'Procesadores de Lenguajes'"/>
+				<prompt>El profesor de PL es Ramon Lopez-Cozar Delgado.</prompt>
+			<elseif cond="asignatura == 'Programacion Tecnica y Cientifica'"/>
+				<prompt>El profesor de NPI es Miguel Garcia Silvente.</prompt>
+			<elseif cond="asignatura == 'Simulacion de Sistemas'"/>
+				<prompt>El profesor de SS es Luis Miguel de Campos Ibañez.</prompt>
+			<elseif cond="asignatura == 'Teoria de la Informacion y la Codificacion'"/>
+					<prompt>El profesor de TIC es Manuel Pegalajar Cuellar.</prompt>
+			<elseif cond="asignatura == 'Vision por Computador'"/>
+				<prompt>El profesor de VC es Pablo Mesejo Santiago.</prompt>
+			</if>
+			
+			<!-- Aqui habria que comprobar si el usuario quiere hacer otra consulta o salir-->
+			<prompt>Muchas gracias por haber utilizado nuestra plataforma. Adios</prompt>
+			<noinput>
+				<exit/>
+			</noinput>
+			
+		</filled>
+		
+	</form>
+</vxml>
